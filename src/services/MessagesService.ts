@@ -1,6 +1,6 @@
-import { getCustomRepository } from 'typeorm';
+import { getCustomRepository } from "typeorm";
 
-import { MessagesRepository } from '../repositories/MessagesRepository';
+import { MessagesRepository } from "../repositories/MessagesRepository";
 
 interface IMessageCreate {
   admin_id?: string;
@@ -26,7 +26,7 @@ class MessagesService {
   async listByUser(user_id: string) {
     const list = await this.messagesRepository.find({
       where: { user_id },
-      relations: ['user'],
+      relations: ["user"],
     });
 
     return list;

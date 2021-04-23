@@ -1,6 +1,6 @@
-import { getCustomRepository } from 'typeorm';
+import { getCustomRepository } from "typeorm";
 
-import { UsersRepository } from '../repositories/UsersRepository';
+import { UsersRepository } from "../repositories/UsersRepository";
 
 class UsersService {
   private usersRepository: UsersRepository;

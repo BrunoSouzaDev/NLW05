@@ -5,12 +5,12 @@ import {
   JoinColumn,
   ManyToOne,
   PrimaryColumn,
-} from 'typeorm';
-import { v4 as uuidV4 } from 'uuid';
+} from "typeorm";
+import { v4 as uuidV4 } from "uuid";
 
-import { User } from './User';
+import { User } from "./User";
 
-@Entity('messages')
+@Entity("messages")
 class Message {
   @PrimaryColumn()
   id: string;
@@ -22,7 +22,7 @@ class Message {
   user_id: string;
 
   @ManyToOne(() => User)
-  @JoinColumn({ name: 'user_id' })
+  @JoinColumn({ name: "user_id" })
   user: User;
 
   @Column()

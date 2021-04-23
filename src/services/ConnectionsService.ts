@@ -1,6 +1,6 @@
-import { getCustomRepository } from 'typeorm';
+import { getCustomRepository } from "typeorm";
 
-import { ConnectionsRepository } from '../repositories/ConnectionsRepository';
+import { ConnectionsRepository } from "../repositories/ConnectionsRepository";
 
 interface IConnectionCreate {
   socket_id: string;
